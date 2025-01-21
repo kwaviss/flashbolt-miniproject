@@ -1,0 +1,17 @@
+@tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer base {
+      body {
+        font-family: 'Kanit', sans-serif;
+      }
+    }
+
+    @layer utilities {
+      .backface-hidden {
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+      }
+    }
