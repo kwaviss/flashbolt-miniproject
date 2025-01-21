@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FlashCard } from './components/FlashCard';
 import { loadVocabulary } from './utils/excelReader';
 import type { Flashcard } from '../types';
-import { shuffle } from 'lodash';
+import shuffle from 'lodash/shuffle';
 
 export default function App() {
   const [deck, setDeck] = useState<Flashcard[]>([]);
